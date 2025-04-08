@@ -1,25 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenny Sarmiento medicina estética</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Sobre la doctora</h1>
-    </header>
-    <nav class="navbar">
-        <ul class="nav-menu">
-          <li><a href="Inicio.html">Inicio</a></li>
-          <li><a href="Sobre la doctora.html">Sobre la doctora</a></li>
-          <li><a href="tratamientos.html">Tratamientos</a></li>
-          <li><a href="Agenda tu cita.html">Agenda tu cita</a></li>
-        </ul>
-        <p>Contenido principal de la página.</p>
-    <footer>
-        <p>© 2025 Jenny Sarmiento medicina estetica. Todos los derechos reservados.</p>
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> sobre la Dra. Jenny Sarmiento</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Sinteca';
+        background-color: #fefefe;
+        color: #1e1e1e;
+      }
+      .hero {
+        background-image: url('Clip path group (3)'); 
+        background-size: cover;
+        background-position: center;
+        height: 100 vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 0 20 px;
+      }
+
+      .hero h1 {
+        font-family: 'Safira';
+        font-size: 44 pts;
+        margin: 0;
+      }
+
+      .hero button {
+        margin-top: 20 px;
+        padding: 12 px 24 px;
+        background-color: #a98c64; 
+        color: white;
+        border: none;
+        border-radius: 8 px;
+        font-size: 13 px;
+        cursor: pointer;
+        transition: background-color 0.3 s;
+      }
+
+      .hero button:hover {
+        background-color: #8c714d;
+      }
+
+      /* Sección sobre la doctora */
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+        background-color: #f6f6f6;
+      }
+
+      .about img {
+        width: 300px;
+        max-width: 90vw;
+        border-radius: 20px;
+        margin: 20px;
+      }
+
+      .about-text {
+        max-width: 500px;
+        margin: 20px;
+      }
+
+      .about-text h2 {
+        font-family: 'Dragon Serial Bold', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #153a3a; /* verde oscuro */
+      }
+
+      .about-text p {
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner principal -->
+    <section class="hero">
+      <h1>Dra. Jenny Sarmiento</h1>
+      <button>Agenda tu cita</button>
+    </section>
+
+    <!-- Sección Sobre la Doctora -->
+    <section class="about">
+      <img src="doctora.jpg" alt="Dra. Jenny Sarmiento" />
+      <div class="about-text">
+        <h2>Sobre la doctora</h2>
+        <p>
+          Con más de 10 años de experiencia en medicina estética y formación
+          especializada en micropigmentación, la Dra. Jenny Sarmiento se dedica
+          a realzar tu belleza natural con profesionalismo, ética y cuidado.
+        </p>
+      </div>
+    </section>
+  </body>
 </html>

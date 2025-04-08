@@ -42,3 +42,8 @@ nav ul li a {
   height: auto;
   display: block;
 }
+h1 {
+    font-family:'Safira';
+    text-align: left;
+}
+

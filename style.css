@@ -46,4 +46,31 @@ h1 {
     font-family:'Safira';
     text-align: left;
 }
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0a0a0a;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #3eaa91;
+}
+
 

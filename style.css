@@ -1,19 +1,19 @@
 /*Fuentes importadas*/
 @font-face {
     font-family: 'Sinteca Regular';
-    src: url('Tipografía/Sinteca-Regular.woff') format('woff');
+    src: url('../Tipografía/Sinteca-Regular.woff') format('woff');
   }
   @font-face {
     font-family: 'Sinteca Bold';
-    src: url('Tipografía/Sinteca-Bold.woff') format('woff');
+    src: url('../Tipografía/Sinteca-Bold.woff') format('woff');
   }
   @font-face {
     font-family: 'Safira';
-    src: url('Tipografía/Safira.woff') format('woff');
+    src: url('../Tipografía/Safira.woff') format('woff');
   }
   /*Cuerpo*/
   body {
-    font-family: 'Sinteca-Regular', sans-serif;
+    font-family: 'Sinteca Regular', sans-serif;
     margin: 0;
     padding: 0;
     background-color:white;
@@ -31,7 +31,7 @@
     background-color: #fcf1eb;
     width: 100%;
     height: auto;
-    font-family: 'Sinteca-Regular', sans-serif;
+    font-family: 'Sinteca Regular', sans-serif;
     margin: 0;
     padding: 0; 
     display: flex;
@@ -200,7 +200,7 @@
 .testimonio h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  font-family: 'Sinteca-Bold', sans-serif;
+  font-family: 'Sinteca Bold', sans-serif;
 }
 
 /* Estilos del texto */
@@ -449,7 +449,7 @@ h1, h2, h3 {
   }
   
   p {
-    font-family: 'Sinteca-Regular', sans-serif;
+    font-family: 'Sinteca Regular', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
   }

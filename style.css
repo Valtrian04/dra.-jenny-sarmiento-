@@ -1,162 +1,457 @@
 /*Fuentes importadas*/
 @font-face {
     font-family: 'Sinteca Regular';
-    src: url('Sinteca-Regular.woff') format('woff');
+    src: url('Fonts/Sinteca-Regular.woff') format('woff');
   }
   @font-face {
     font-family: 'Sinteca Bold';
-    src: url('Sinteca-Bold.woff') format('woff');
+    src: url('Fonts/Sinteca-Bold.woff') format('woff');
   }
   @font-face {
     font-family: 'Safira';
-    src: url('Safira.woff') format('woff');
+    src: url('Fonts/Safira.woff') format('woff');
   }
   /*Cuerpo*/
   body {
     font-family: 'Sinteca Regular', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: ##FFFFFF;
+    background-color:white;
     color: #899685;
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
   /*Menú*/
   header {
-    background-color: #F8E6CF;
-    padding: 10px 20px;
-  } 
-  nav img {
-    height: 50px;
-  }
-  .menu {
-    display: flex;
-    align-items: left;
-    gap: 20px; 
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-  
-  .menu a ul li:hover {
-    color: #c97d60;
-    text-decoration: underline;
-  }
-  .menu a ul li:active {
-    color: #f0dee2;
-    text-decoration: underline;
-  }
-/* Banner */
-#Banner img {
+    background-color: #fcf1eb;
     width: 100%;
     height: auto;
-    display: block;
-  }
-/* Cajas */
-section {
-    padding: 60px 20px;
-  }
-  
-  #Historiasdebelleza {
-    background-color: #899685;
-    color: #E6CFF8;
-  }
-  
-  #Encuentranuestroconsultorio {
-    background-color: #e9ddfa; 
-  }
-
-    #TyC {
-        background-color: #899685;
-        color: #E6CFF8;
-    }
-
-  .container {
+    font-family: 'Sinteca Regular', sans-serif;
+    margin: 0;
+    padding: 0; 
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
+    align-items: center;
+    position: sticky; /*Esto lo mantiene arriba */
+    top: 0; /* Se pega en la parte superior */
+    z-index: 999; /* Se mantiene encima del contenido */
   }
   
-  .item {
-    max-width: 300px;
-    background-color: #E6CFF8;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
+  .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Centramos horizontalmente */
+    display: flex;
+    justify-content: center; /* ¡Centrado de los ítems! */
+    align-items: center;
+    gap: 30px; /* Espacio entre los elementos */
   }
   
-  .item img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 10px;
+  /* Logo */
+  .logo {
+    height: 60px;
   }
+  
+  /* Enlaces */
+  .nav li a {
+    background-color: #fcf1eb;
+    color: #899685;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .nav li a:hover {
+    background-color: #899685;
+    color: #fcf1eb;
+  }
+  
+  .nav li {
+    position: relative; /* ¡Muy importante para que el submenú se posicione bien! */
+  }
+  
+  /* El submenú oculto por defecto */
+  .nav li ul {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #fcf1eb;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1000; /* Para que quede encima de todo */
+  }
+  
+  /* Cuando pasamos el mouse sobre el li o sobre su hijo ul, mostramos el submenú */
+  .nav li:hover > ul {
+    display: block;
+  }
+  
+  /* Opcional: mejorar la apariencia de los ítems del submenú */
+  .nav li ul li a {
+    padding: 10px;
+    color: #899685;
+    background-color: #fcf1eb;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav li ul li a:hover {
+    background-color: #899685;
+    color: #fcf1eb;
+  }
+  
+  
+/* Banner */
+#Banner {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#Banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contenido-banner {
+  position: absolute;
+  top: 85%;
+  right: 10%; /* Alineamos hacia la izquierda con margen */
+  transform: translateY(-50%);
+}
+
+.boton-banner {
+  background-color: #a98c64;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.boton-banner:hover {
+  background-color: #886e4f;
+}
+
+/* Contenedor adicional para darle margen */
+.contenedor-Historiasdebelleza {
+  width: 70%; 
+  margin: 0 auto; 
+}
+
+#Historiasdebelleza {
+  background-color:white;
+  padding: 60px 20px;
+  color: #899685;
+  text-align: center;
+}
+
+/* Caja centrada */
+.testimonios {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Caja individual del testimonio */
+.testimonio {
+  background-color: #fcf1eb;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.testimonio:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Imágenes del mismo tamaño y recortadas si es necesario */
+.testimonio img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* recorta la imagen sin deformarla */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Estilos del nombre */
+.testimonio h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: 'Sinteca Bold', sans-serif;
+}
+
+/* Estilos del texto */
+.testimonio p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+  
+#Encuentranuestroconsultorio {
+  background-color: #fcf1eb;
+  padding: 2rem 1rem; /* espacio interno alrededor del contenido */
+  text-align: center;
+}
+
+#Encuentranuestroconsultorio h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #899685; /* color más oscuro para contraste */
+}
+
+#Encuentranuestroconsultorio iframe {
+  width: 100%;
+  max-width: 1200px; 
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transición suave */
+}
+
+#Encuentranuestroconsultorio iframe:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al 105% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+}
+
+#TyC {
+  background-color: #899685;
+  color:  #fcf1eb; 
+  padding: 1rem;
+  font-size: 1rem; 
+}
+
+
+#TyC table {
+  width: 100%;
+  border-collapse: collapse; /* Eliminar los espacios entre las celdas */
+  margin-left: 2rem;
+  margin-right: 2rem; /* Añadir margen a la izquierda y derecha */
+}
+
+#TyC td {
+  padding: 0.2rem; /* Reducir padding para que el contenido esté más pegado */
+  text-align: center;
+}
+
+#TyC td:first-child {
+  text-align: left; /* Alinea a la izquierda los derechos reservados */
+}
+
+#TyC td:last-child {
+  text-align: left; /* Alinea a la izquierda los términos y condiciones */
+  border-left: 2px solid #fcf1eb; /* Línea separadora */
+  padding-left: 0.5rem; /* Reducir el espacio izquierdo para acercar el botón */
+}
+
+button {
+  background-color: #899685; 
+  color: #fcf1eb;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 0.1rem; /* Reduce la distancia entre los dos elementos */
+}
+
+button:hover {
+  background-color:#fcf1eb;
+  color: #899685; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Contenedor adicional para darle margen */
+.contenedor-presentacion {
+  width: 70%; /* Ocupa el 80% del ancho de la pantalla */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos generales para la presentación */
+#presentacion-doctora {
+  display: flex; /* Usamos flexbox para la disposición en fila */
+  justify-content: space-between; /* Espacio entre el texto y la imagen */
+  align-items: flex-start; /* Alineamos los elementos en la parte superior */
+  gap: 2rem; /* Espacio entre el texto y la imagen */
+  margin: 2rem 0;
+}
+
+/* Contenedor de los textos */
+#presentacion-doctora .textos {
+  display: flex;
+  flex-direction: column; /* Los textos (h1 y p) estarán en columna */
+  gap: 1rem; /* Espacio entre el título y el párrafo */
+  flex: 1; /* Hace que los textos ocupen el espacio restante */
+}
+
+/* Estilo para el título (h1) */
+#presentacion-doctora h1 {
+  font-size: 2rem;
+  color: #899685;
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+/* Estilo para el párrafo */
+#presentacion-doctora p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4A4A4A;
+  text-align: left;
+}
+
+/* Estilo para la imagen */
+#presentacion-doctora img {
+  width: 40%; /* La imagen ocupará el 40% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px;
+}
+
+/* Estilo para el contenedor del formulario */
+.Contenedor-formulario {
+  width: 30%; 
+  margin: 2rem auto; /* Centrado */
+  padding: 2rem;
+  background-color: #899685;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el h1 afuera */
+h1 {
+  font-family: 'Safira', sans-serif;
+  font-size: 2.5rem;
+  width: 70%; /* Solo ocupa 70% de pantalla */
+  margin: 2rem auto; /* Centrado también */
+  text-align: left;
+  color:#899685 ;
+}
+
+/* Párrafo */
+.Contenedor-formulario p {
+  font-size: 1.1rem;
+  color: #fcf1eb;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/* Etiquetas */
+.Contenedor-formulario label {
+  display: block;
+  font-size: 1rem;
+  color: #fcf1eb;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs */
+.Contenedor-formulario input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Botones: contenedor */
+.botones {
+  display: flex;
+  gap: 1rem; /* Espacio entre los dos botones */
+  margin-top: 1rem;
+}
+
+/* Botones individuales */
+.botones button {
+  flex: 1; /* Cada botón ocupa mismo tamaño */
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #F0E5DE;
+  color: #899685;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover */
+.botones button:hover {
+  background-color: #C97D60;
+  color: #F0E5DE;
+}
+
+/* Contenedor general de formulario + imágenes */
+.seccion-formulario {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Hacemos que las imágenes estén en columna */
+.seccion-formulario > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Estilo redondo para las imágenes */
+.seccion-formulario img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /*h1, h2, h3, p*/
 h1, h2, h3 {
     font-family: 'Safira', sans-serif;
     text-align: left;
     margin-bottom: 20px;
+    width: 70%;
   }
   
   h1 {
-    font-size: 88pts;
+    font-size: 2.5rem;
+    width: 70%;
   }
   
   h2 {
-    font-size: 44pts;
+    font-size: 2rem;
   }
   
   h3 {
-    font-size: 32pts;
+    font-size: 1.8rem;
   }
   
   p {
     font-family: 'Sinteca Regular', sans-serif;
-    font-size: 20pts;
+    font-size: 1rem;
     line-height: 1.6;
   }
-
-.fotter {
-    background-color: #899685;
-    color: #fcf1eb;
-    padding: 20px 0;
-    text-align: left;
-  }
-  .fotter li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .fotter a {
-    text-decoration: none;
-    color: rgba(252, 241, 235, 1);
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
-  
-  .fotter a ul li:hover {
-    color: #c97d60;
-    text-decoration: underline;
-  }
-  .fotter a ul li:active {
-    color: #c97d60;
-    text-decoration: underline;
-  }
-  
 
 

@@ -12,13 +12,23 @@
     src: url('../Tipografía/Safira.woff') format('woff');
   }
   /*Cuerpo*/
-  body {
+  html, body {
     font-family: 'Sinteca Regular', sans-serif;
     margin: 0;
     padding: 0;
     background-color:white;
     color: #899685;
   }
+
+.pagina {
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Esto empuja el footer hacia abajo cuando hay poco contenido */
+}
 
   * {
     margin: 0;
@@ -244,7 +254,8 @@
   padding: 1rem;
   font-size: 1rem; 
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    
 }
 
 

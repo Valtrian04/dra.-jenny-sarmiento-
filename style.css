@@ -1,11 +1,11 @@
 /*Fuentes importadas*/
 @font-face {
     font-family: 'Sinteca Regular';
-    src: url('../Tipografía/Sinteca-Regular.woff') format('woff');
+    src: url('Tipografía/Sinteca-Regular.woff') format('woff');
   }
   @font-face {
     font-family: 'Sinteca Bold';
-    src: url('../Tipografía/Sinteca-Bold.woff') format('woff');
+    src: url('Tipografía/Sinteca-Bold.woff') format('woff');
   }
   @font-face {
     font-family: 'Safira';

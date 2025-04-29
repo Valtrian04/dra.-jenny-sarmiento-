@@ -25,9 +25,7 @@
     box-sizing: border-box;
   }
 .container{
-    min-height: 100dvh; 
-    display: grid;
-    grid-template-rows: auto, 1fr, auto; 
+    display: flex;
 }
   
   /*Menú*/
@@ -222,6 +220,7 @@
 }
 
 #Encuentranuestroconsultorio h2 {
+font-family: 'Safira';
   margin-bottom: 1rem;
   font-size: 1.8rem;
   color: #899685; /* color más oscuro para contraste */
@@ -319,9 +318,10 @@ button:hover {
 
 /* Estilo para el título (h1) */
 #presentacion-doctora h1 {
-  font-size: 2rem;
-  color: #899685;
-  margin-bottom: 1rem; /* Espacio debajo del título */
+    font-family: 'Safira';
+    font-size: 2rem;
+    color: #899685;
+    margin-bottom: 1rem; /* Espacio debajo del título */
 }
 
 /* Estilo para el párrafo */
@@ -351,7 +351,7 @@ button:hover {
 
 /* Estilo para el h1 afuera */
 h1 {
-  font-family: 'Safira', sans-serif;
+  font-family: 'Safira';
   font-size: 2.5rem;
   width: 70%; /* Solo ocupa 70% de pantalla */
   margin: 2rem auto; /* Centrado también */
@@ -446,14 +446,14 @@ h1 {
   }
   
   h2 {
-    font-family: 'Safira', sans-serif;
+    font-family: 'Safira';
     font-size: 2rem;
     font-weight: 400;
     text-align: left;
   }
   
   h3 {
-    font-family: 'Safira', sans-serif;
+     font-family: 'Safira'; 
     font-size: 1.8rem;
     font-weight: 400;
     text-align: left;

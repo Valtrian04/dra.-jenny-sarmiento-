@@ -259,8 +259,7 @@
   border-collapse: collapse; /* Eliminar los espacios entre las celdas */
   margin-left: 2rem;
   margin-right: 2rem; /* Añadir margen a la izquierda y derecha */
- margin-top: 2rem;
- margin-bottom: 2rem;
+border-radius:2rem; 
 }
 
 #TyC td {

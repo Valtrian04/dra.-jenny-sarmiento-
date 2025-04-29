@@ -1,15 +1,15 @@
 /*Fuentes importadas*/
 @font-face {
     font-family: 'Sinteca Regular';
-    src: url('Fonts/Sinteca-Regular.woff') format('woff');
+    src: url('Tipografía/Sinteca-Regular.woff') format('woff');
   }
   @font-face {
     font-family: 'Sinteca Bold';
-    src: url('Fonts/Sinteca-Bold.woff') format('woff');
+    src: url('Tipografía/Sinteca-Bold.woff') format('woff');
   }
   @font-face {
     font-family: 'Safira';
-    src: url('Fonts/Safira.woff') format('woff');
+    src: url('Tipografía/Safira.woff') format('woff');
   }
   /*Cuerpo*/
   body {

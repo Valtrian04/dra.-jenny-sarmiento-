@@ -24,6 +24,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+.container{
+    min-height: 100vh; 
+    display: grid;
+    grid-template-rows: auto, 1fr, auto; 
+}
   
   /*Menú*/
   header {
@@ -245,6 +250,7 @@
     margin: 0;
     padding: 0;
     
+    
 }
 
 
@@ -253,6 +259,8 @@
   border-collapse: collapse; /* Eliminar los espacios entre las celdas */
   margin-left: 2rem;
   margin-right: 2rem; /* Añadir margen a la izquierda y derecha */
+ margin-top: 2rem;
+ margin-bottom: 2rem;
 }
 
 #TyC td {

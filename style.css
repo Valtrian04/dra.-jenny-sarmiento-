@@ -9,7 +9,7 @@
   }
   @font-face {
     font-family: 'Safira';
-    src: url('../Tipografía/Safira.woff') format('woff');
+    src: url('Tipografía/Safira.woff') format('woff');
   }
   /*Cuerpo*/
   body {

@@ -352,15 +352,33 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Estilo para el h1 afuera */
+/* Estilo general para el h1 */
 h1 {
   font-family: 'Safira', sans-serif;
   font-size: 2.5rem;
-  width: 70%; /* Solo ocupa 70% de pantalla */
-  margin: 2rem auto; /* Centrado también */
+  width: 70%;
+  margin: 2rem auto;
   text-align: left;
-  color:#899685 ;
+  color: #899685;
+}
+
+/* Contenedor principal de la sección */
+.seccion-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Formulario estilo caja */
+.Contenedor-formulario {
+  width: 30%;
+  padding: 2rem;
+  background-color: #899685;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Párrafo */
@@ -389,16 +407,15 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* Botones: contenedor */
+/* Botones */
 .botones {
   display: flex;
-  gap: 1rem; /* Espacio entre los dos botones */
+  gap: 1rem;
   margin-top: 1rem;
 }
 
-/* Botones individuales */
 .botones button {
-  flex: 1; /* Cada botón ocupa mismo tamaño */
+  flex: 1;
   padding: 1rem;
   font-size: 1.1rem;
   background-color: #F0E5DE;
@@ -408,37 +425,26 @@ h1 {
   cursor: pointer;
 }
 
-/* Hover */
 .botones button:hover {
   background-color: #C97D60;
   color: #F0E5DE;
 }
 
-/* Contenedor general de formulario + imágenes */
-.seccion-formulario {
-  display: flex;
-  justify-content: left;
-  align-items: flex-start;
-  gap: 2rem;
-  width: 70%;
-  margin: 0 auto;
-}
-
-/* Hacemos que las imágenes estén en columna */
-.seccion-formulario > div:last-child {
+/* Imágenes redondas alineadas verticalmente */
+.imagenes-redondas {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-/* Estilo redondo para las imágenes */
-.seccion-formulario img {
+.imagenes-redondas img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 /*h1, h2, h3, p*/
   h1 {
     font-family: 'Safira', sans-serif;

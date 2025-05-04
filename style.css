@@ -13,14 +13,24 @@
     src: url('Tipografía/Safira.woff') format('woff');
   }
   /*Cuerpo*/
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
   body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Sinteca Regular';
     margin: 0;
     padding: 0;
     background-color:white;
     color: #899685;
   }
-
+.layout {
+  flex: 1;
+}
   * {
     margin: 0;
     padding: 0;
@@ -244,8 +254,9 @@ font-family: 'Safira';
   color:  #fcf1eb; 
   padding: 1rem;
   font-size: 1rem; 
-    margin: 0;
-    padding: 0;       
+  margin: 0;
+  margin top: auto;
+  padding: 0;       
 }
 
 #TyC table {

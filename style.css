@@ -344,6 +344,354 @@ button:hover {
   border-radius: 8px;
 }
 
+/*Fuentes importadas*/
+@font-face {
+    font-family: 'Sinteca Regular';
+    src: url('Tipografía/Sinteca-Regular.woff') format('woff');
+
+  }
+  @font-face {
+    font-family: 'Sinteca Bold';
+    src: url('Tipografía/Sinteca-Bold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Safira';
+    src: url('Tipografía/Safira.woff') format('woff');
+  }
+  /*Cuerpo*/
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sinteca Regular';
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    color: #899685;
+  }
+.layout {
+  flex: 1;
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }  
+  /*Menú*/
+  header {
+    background-color: #fcf1eb;
+    width: 100%;
+    height: auto;
+    font-family: 'Sinteca Regular', sans-serif;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky; /*Esto lo mantiene arriba */
+    top: 0; /* Se pega en la parte superior */
+    z-index: 999; /* Se mantiene encima del contenido */
+  }
+  
+  .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Centramos horizontalmente */
+    display: flex;
+    justify-content: center; /* ¡Centrado de los ítems! */
+    align-items: center;
+    gap: 30px; /* Espacio entre los elementos */
+  }
+  
+  /* Logo */
+  .logo {
+    height: 60px;
+  }
+  
+  /* Enlaces */
+  .nav li a {
+    background-color: #fcf1eb;
+    color: #899685;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .nav li a:hover {
+    background-color: #899685;
+    color: #fcf1eb;
+  }
+  
+  .nav li {
+    position: relative; /* ¡Muy importante para que el submenú se posicione bien! */
+  }
+  
+  /* El submenú oculto por defecto */
+  .nav li ul {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #fcf1eb;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1000; /* Para que quede encima de todo */
+  }
+  
+  /* Cuando pasamos el mouse sobre el li o sobre su hijo ul, mostramos el submenú */
+  .nav li:hover > ul {
+    display: block;
+  }
+  
+  /* Opcional: mejorar la apariencia de los ítems del submenú */
+  .nav li ul li a {
+    padding: 10px;
+    color: #899685;
+    background-color: #fcf1eb;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav li ul li a:hover {
+    background-color: #899685;
+    color: #fcf1eb;
+  }
+  
+  
+/* Banner */
+#Banner {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#Banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contenido-banner {
+  position: absolute;
+  top: 85%;
+  right: 10%; /* Alineamos hacia la izquierda con margen */
+  transform: translateY(-50%);
+}
+
+.boton-banner {
+  background-color: #a98c64;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.boton-banner:hover {
+  background-color: #886e4f;
+}
+
+/* Contenedor adicional para darle margen */
+.contenedor-Historiasdebelleza {
+  width: 70%; 
+  margin: 0 auto; 
+}
+
+#Historiasdebelleza {
+  background-color:white;
+  padding: 60px 20px;
+  color: #fcf1eb;
+  text-align: center;
+}
+
+/* Caja centrada */
+.testimonios {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Caja individual del testimonio */
+.testimonio {
+  background-color: #899685;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.testimonio:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Imágenes del mismo tamaño y recortadas si es necesario */
+.testimonio img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* recorta la imagen sin deformarla */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Estilos del nombre */
+.testimonio h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: 'Sinteca Bold', sans-serif;
+}
+
+/* Estilos del texto */
+.testimonio p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+  
+#Encuentranuestroconsultorio {
+  background-color: #fcf1eb;
+  padding: 2rem 1rem; /* espacio interno alrededor del contenido */
+  text-align: center;
+}
+
+#Encuentranuestroconsultorio h2 {
+font-family: 'Safira';
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #899685; /* color más oscuro para contraste */
+}
+
+#Encuentranuestroconsultorio iframe {
+  width: 100%;
+  max-width: 1200px; 
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transición suave */
+}
+
+#Encuentranuestroconsultorio iframe:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al 105% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+}
+
+#TyC {
+  background-color: #899685;
+  color:  #fcf1eb; 
+  padding: 3rem 0;
+  font-size: 1rem; 
+  margin: 0;
+  margin-top: auto;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+#TyC table {
+  width: 100%;
+  border-collapse: collapse; /* Eliminar los espacios entre las celdas */
+  margin-left: 2rem;
+  margin-right: 2rem; /* Añadir margen a la izquierda y derecha */
+border-radius:2rem; 
+}
+
+#TyC td {
+  padding: 0.2rem; /* Reducir padding para que el contenido esté más pegado */
+  text-align: center;
+}
+
+#TyC td:first-child {
+  text-align: left; /* Alinea a la izquierda los derechos reservados */
+}
+
+#TyC td:last-child {
+  text-align: left; /* Alinea a la izquierda los términos y condiciones */
+  border-left: 2px solid #fcf1eb; /* Línea separadora */
+  padding-left: 0.5rem; /* Reducir el espacio izquierdo para acercar el botón */
+}
+
+button {
+  background-color: #899685; 
+  color: #fcf1eb;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 0.1rem; /* Reduce la distancia entre los dos elementos */
+}
+
+button:hover {
+  background-color:#fcf1eb;
+  color: #899685; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Contenedor adicional para darle margen */
+.contenedor-presentacion {
+  width: 70%; /* Ocupa el 80% del ancho de la pantalla */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos generales para la presentación */
+#presentacion-doctora {
+  display: flex; /* Usamos flexbox para la disposición en fila */
+  justify-content: space-between; /* Espacio entre el texto y la imagen */
+  align-items: flex-start; /* Alineamos los elementos en la parte superior */
+  gap: 2rem; /* Espacio entre el texto y la imagen */
+  margin: 2rem 0;
+}
+
+/* Contenedor de los textos */
+#presentacion-doctora .textos {
+  display: flex;
+  flex-direction: column; /* Los textos (h1 y p) estarán en columna */
+  gap: 1rem; /* Espacio entre el título y el párrafo */
+  flex: 1; /* Hace que los textos ocupen el espacio restante */
+}
+
+/* Estilo para el título (h1) */
+#presentacion-doctora h1 {
+    font-family: 'Safira';
+    font-size: 2rem;
+    color: #899685;
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+/* Estilo para el párrafo */
+#presentacion-doctora p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4A4A4A;
+  text-align: left;
+}
+
+/* Estilo para la imagen */
+#presentacion-doctora img {
+  width: 40%; /* La imagen ocupará el 40% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px;
+}
+
 /* Estilo para el contenedor del formulario */
 .Contenedor-formulario {
   width: 30%; 

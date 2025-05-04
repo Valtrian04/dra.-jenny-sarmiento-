@@ -1,60 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenny Sarmiento medicina estética</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Imágenes</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="layout">
-    <header>
-        <div class="header">
-            <ul class="nav">
-              <li><img src="Images/LogoVR1.png" alt="Logo" class="logo"></li>
-              <li><a href="Index.html">Inicio</a></li>
-              <li><a href="Sobre la doctora.html">Sobre la doctora</a></li>
-              <li><a href>Tratamientos</a>
-                <ul>
-                  <li><a href="Bienestar capilar.html">Bienestar Capilar</a></li>
-                  <li><a href="Bienestar facial.html">Bienestar facial</a></li>
-                  <li><a href="Micropigmentación.html">Micropigmentación y Microblading</a></li>
-                </ul>
-              </li>
-              <li><a href="Agenda tu cita.html">Agenda tu cita</a></li>
-            </ul>
-          </div>
-        </header>
-        <main>
- <h1>Escríbenos y Agenda tu cita</h1>
 
-        <div class="seccion-formulario">
-          <!-- Contenedor formulario -->
-          <div class="Contenedor-formulario">
-            <form action="FormCita" method="post">
-              <h2>Completa este formulario para agendar una cita.</h2>
-        
-              <label for="nombre">Escribe tu nombre</label>
-              <input type="text" id="nombre" name="nombre" required>
-        
-              <label for="correo">Escribe tu correo</label>
-              <input type="text" id="correo" name="correo" required>
-        
-              <div class="botones">
-                <button type="submit">Enviar</button>
-              </div>
+  <h1>Escríbenos y agenda tu cita</h1>
+
+  <div class="seccion-formulario">
+    <!-- Formulario -->
+    <div class="Contenedor-formulario">
+      <form action="FormCita" method="post">
+        <p>Completa este formulario para agendar una cita.</p>
+        <label for="nombre">Escribe tu nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Escribe tu correo</label>
+        <input type="text" id="correo" name="correo" required>
+
+        <div class="botones">
+          <button type="submit">Enviar</button>
+          <button type="submit">Escríbenos por WhatsApp</button>
+        </div>
       </form>
     </div>
-  </div>
-</main>
-          <!-- Imágenes fuera de la caja -->
-          <div>
-            <img src="Images/TratamientoSM.jpg" alt="TratamientoSM">
-            <img src="Images/Skincare.jpg" alt="Skincare">
-          </div>
-        </div>
-    </main>
+    <!-- Imágenes redondas -->
+    <div class="imagenes-redondas">
+      <img src="Images/TratamientoSM.jpg" alt="Tratamiento SM">
+      <img src="Images/Skincare.jpg" alt="Skincare">
     </div>
+  </div>
     <footer id="TyC">
         <table>
             <tr>

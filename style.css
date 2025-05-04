@@ -26,7 +26,6 @@
     margin: 0;
     padding: 0;
     background-color:white;
-    color: #899685;
   }
 .layout {
   flex: 1;
@@ -166,7 +165,7 @@
 #Historiasdebelleza {
   background-color:white;
   padding: 60px 20px;
-  color: #fcf1eb;
+  color: #899685;
   text-align: center;
 }
 

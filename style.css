@@ -252,7 +252,7 @@ font-family: 'Safira';
 #TyC {
   background-color: #899685;
   color:  #fcf1eb; 
-  padding: 2rem 0;
+  padding: 3rem 0;
   font-size: 1rem; 
   margin: 0;
   margin-top: auto;
@@ -447,9 +447,9 @@ h1 {
   h1 {
     font-family: 'Safira', sans-serif;
     font-size: 2.5rem;
-    width: 70%;
+    width: auto;
     font-weight: 400;
-      text-align: left;
+    text-align: left;
   }
   
   h2 {
@@ -470,7 +470,7 @@ h1 {
     font-family: 'Sinteca Regular', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-      text-align: left;
+    text-align: left;
   }
 
 

@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     background-color:white;
+    color: #fcf1eb;
   }
 .layout {
   flex: 1;
@@ -181,7 +182,7 @@
 
 /* Caja individual del testimonio */
 .testimonio {
-  background-color: #899685;
+  background-color: #fcf1eb;
   border-radius: 10px;
   padding: 20px;
   width: 300px;

@@ -443,6 +443,19 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*Div único para la página de agenda tu cita*/
+.formulario-agenda {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem; /* Opcional: agrega espacio desde el borde izquierdo */
+}
+
+.formulario-agenda .Contenedor-formulario {
+  margin: 0;
+  max-width: 500px;
+  width: 100%;
+}
+
 /*h1, h2, h3, p*/
   h1 {
     font-family: 'Safira', sans-serif;

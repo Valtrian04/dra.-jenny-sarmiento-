@@ -535,8 +535,8 @@ button:hover {
     }
 
     .boton-cita a {
-      background-color: #fcf1eb;
-      color: #899685;
+      background-color: #899685;
+      color: #fcf1eb;
       padding: 0.8rem 1.5rem;
       border-radius: 8px;
       text-decoration: none;
@@ -546,7 +546,7 @@ button:hover {
     }
 
     .boton-cita a:hover {
-      background-color: #899685;
+      background-color: ca7c5f;
     }
 
 

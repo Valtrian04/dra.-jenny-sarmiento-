@@ -548,6 +548,58 @@ button:hover {
     .boton-cita a:hover {
       background-color: ca7c5f;
     }
+/* Estilos para la sección de términos y condiciones */
+.terminos-condiciones {
+    width: 70%;
+    margin: 2rem auto;
+    background-color: #fcf1eb;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 
+.terminos-condiciones > p {
+    font-size: 1.1rem;
+    color: #4A4A4A;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.terminos-condiciones ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.terminos-condiciones li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terminos-condiciones li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.terminos-condiciones li p b {
+    font-family: 'Sinteca Bold', sans-serif;
+    font-size: 1.3rem;
+    color: #899685;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.terminos-condiciones li p {
+    font-size: 1rem;
+    color: #4A4A4A;
+    text-align: left;
+}
 
 

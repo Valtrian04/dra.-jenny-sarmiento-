@@ -478,45 +478,76 @@ button:hover {
     line-height: 1.6;
     text-align: left;
   }
-/*Sección de tratamientos*/
-.bloque-tratamiento-con-imagen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin: 3rem auto;
-  max-width: 1200px;
-  flex-wrap: wrap;
-}
 
-.imagen-externa img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
 
-.bloque-tratamiento {
-  background-color: #f2f2f2;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  flex: 1 1 600px;
-}
+    .bloque-tratamiento-con-imagen-verde {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin: 3rem auto;
+      width: 70%; /* Ajustado al 70% del ancho */
+      max-width: 1200px;
+      flex-wrap: wrap;
+      position: relative; /* Para controlar el z-index */
+    }
 
-.bloque-tratamiento .texto h3 {
-  font-family: 'Safira', sans-serif;
-  font-size: 1.8rem;
-  color: #5f7261;
-  margin-bottom: 0.5rem;
-}
+    .imagen-externa {
+      position: relative;
+      z-index: 1; /* Asegura que la imagen esté detrás del bloque */
+    }
 
-.bloque-tratamiento .texto p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #4A4A4A;
-}
+    .imagen-externa img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .bloque-tratamiento {
+      background-color: #899685; /* Color de fondo */
+      color: #fcf1eb; /* Color de texto por defecto */
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1 1 600px;
+      z-index: 2; /* Asegura que el bloque esté encima de la imagen */
+    }
+
+    .bloque-tratamiento .texto h3 {
+      font-family: 'Safira', sans-serif;
+      font-size: 1.8rem;
+      color: #fcf1eb; /* Color del título */
+      margin-bottom: 0.5rem;
+    }
+
+    .bloque-tratamiento .texto p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #fcf1eb; /* Color del párrafo */
+    }
+
+    .boton-cita {
+      display: block;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    .boton-cita a {
+      background-color: #899685;
+      color: #fcf1eb;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Safira', sans-serif;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-cita a:hover {
+      background-color: #6b7468;
+    }
 
 
 

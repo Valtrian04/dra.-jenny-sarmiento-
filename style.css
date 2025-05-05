@@ -560,26 +560,24 @@ button:hover {
 
 .terminos-condiciones > p {
     font-size: 1.1rem;
-    color: #4A4A4A;
+    color: #fcf1eb;
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
 .terminos-condiciones ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+    gap: 20px; /* Space between grid items */
     justify-content: center;
 }
 
 .terminos-condiciones li {
-    background-color: #ffffff;
+    background-color:  #899685;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 100%;
-    max-width: 600px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -598,8 +596,7 @@ button:hover {
 
 .terminos-condiciones li p {
     font-size: 1rem;
-    color: #4A4A4A;
+    color:#fcf1eb ;
     text-align: left;
 }
-
 

@@ -531,12 +531,12 @@ button:hover {
     .boton-cita {
       display: block;
       margin: 2rem auto;
-      text-align: center;
+      text-align: right;
     }
 
     .boton-cita a {
-      background-color: #899685;
-      color: #fcf1eb;
+      background-color: #fcf1eb;
+      color: #899685;
       padding: 0.8rem 1.5rem;
       border-radius: 8px;
       text-decoration: none;
@@ -546,7 +546,7 @@ button:hover {
     }
 
     .boton-cita a:hover {
-      background-color: #6b7468;
+      background-color: #899685;
     }
 
 

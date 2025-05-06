@@ -399,10 +399,12 @@ button:hover {
 }
 
 .Contenedor-formulario select{
-    padding: 0.5rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+     width: 100%;
+  padding: 0.8rem;
   font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem; 
 }
 
 /* Botones */
@@ -415,7 +417,7 @@ button:hover {
 .botones button {
   flex: 1;
   padding: 1rem;
-  font-size: 1.1rem;
+  font-size: 0.5rem;
   background-color: #F0E5DE;
   color: #899685;
   border: none;

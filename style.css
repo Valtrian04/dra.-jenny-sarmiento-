@@ -298,6 +298,25 @@ button:hover {
   color: #899685; /* Cambia el color del texto al pasar el mouse */
 }
 
+/* Iconos de redes sociales */
+.redes-sociales {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.icono-red {
+  width: 30px;
+  height: 30px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.icono-red:hover {
+  transform: scale(1.1);
+}
+
+
 /* Contenedor adicional para darle margen */
 .contenedor-presentacion {
   width: 70%; /* Ocupa el 80% del ancho de la pantalla */

@@ -398,6 +398,13 @@ button:hover {
   margin-bottom: 1rem;
 }
 
+.Contenedor-formulario select{
+    padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
 /* Botones */
 .botones {
   display: flex;
